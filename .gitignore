@@ -1,0 +1,16 @@
+# Ficheiros e diretórios locais do Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignorar o ficheiro de lock da CLI, mas não o da configuração
+.terraformrc
+terraform.rc
