@@ -18,10 +18,10 @@ jobs:
           echo "SHORT_SHA=$(echo ${GITHUB_SHA} | cut -c1-7)" >> $GITHUB_ENV
       - name: Build Docker Image
         run: |
-          docker build -t thedevopsdue/complete-devops-project:${{ env.SHORT_SHA }} .
+          docker build -t paulojr7/complete-devops-project:${{ env.SHORT_SHA }} .
       - name: Log in to Docker Hub
         run: |
           echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
       - name: Push Dockerhub
         run: |
-          docker push thedevopsdue/complete-devops-project:${{ env.SHORT_SHA }}
+          docker push paulojr7/complete-devops-project:${{ env.SHORT_SHA }}
