@@ -13,4 +13,4 @@ override.tf.json
 
 # Ignorar o ficheiro de lock da CLI, mas não o da configuração
 .terraformrc
-terraform.rc
+terraform.rcargo-repo-secret.yaml
