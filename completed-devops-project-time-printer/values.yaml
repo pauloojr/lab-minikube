@@ -1,6 +1,6 @@
 image:
   repository: paulojr7/complete-devops-project
-  tag: latest
+  tag: 095c6ba
   pullPolicy: IfNotPresent
 
 service:
