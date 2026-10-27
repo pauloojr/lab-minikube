@@ -14,3 +14,4 @@ override.tf.json
 # Ignorar o ficheiro de lock da CLI, mas não o da configuração
 .terraformrc
 terraform.rcargo-repo-secret.yaml
+output-simulado.yaml
