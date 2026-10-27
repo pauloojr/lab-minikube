@@ -15,3 +15,4 @@ override.tf.json
 .terraformrc
 terraform.rcargo-repo-secret.yaml
 output-simulado.yaml
+argo-repo-secret.yaml

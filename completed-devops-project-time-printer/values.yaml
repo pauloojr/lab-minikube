@@ -1,3 +1,4 @@
+# Lousa: values.yaml
 image:
   repository: paulojr7/complete-devops-project
   tag: 51fa3ef
@@ -6,9 +7,24 @@ image:
 service:
   type: ClusterIP
   port: 8080
+
 ingress:
   enabled: true
+  # Define o controlador responsável por este Ingress
+  className: "nginx"
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  # Definição obrigatória das regras de roteamento (rules)
+  hosts:
+    - host: devops-project.local
+      paths:
+        - path: /
+          pathType: Prefix
+  # Bloco TLS vazio para evitar erros de compilação caso o template tente aceder-lhe
+  tls: []
+
 serviceAccount:
   enabled: false
+
 autoscaling:
   enabled: false
