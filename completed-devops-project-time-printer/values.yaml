@@ -1,7 +1,7 @@
 # Lousa: values.yaml
 image:
   repository: paulojr7/complete-devops-project
-  tag: 67724b7
+  tag: e90567d
   pullPolicy: IfNotPresent
 
 service:
